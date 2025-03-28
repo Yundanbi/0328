@@ -1,204 +1,128 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Page Title</title>
+  <head>
+    <title>Page Title</title>
+  </head>
   <style>
     *{margin:0;}
-
-    ul,ol,li{list-style:none; margin:0; padding:0;}
-
-    header {width:1185px; height:160px;  margin:0 auto;margin:left;}
-
-    #logo {width:220px; height:100px; margin:30px 0 0 20px;
-      float:left; background-color:green;}
-
-    #logo img{width:100%; height:100%;}
-
-    #login {width:295px; height:30px; margin: 30px 40px 0px 0px;
-      float:right;}
-
-    #login ul{font-size:12px; color:#666;}
-    #login li{float:left; margin:0 5px;}
-    #login li > a{text-decoration:none; color:#000;}
-
-    #nav {width:920px; height:40px; float:right; margin: 20px 0 0 0px;}
-
-    #nav ul{font-size:20px; color:#666;}
-    #nav li{float:left; margin:0 10px;}
-    #nav li > a {text-decoration:none; color:#000;}
-
-    #slider{width:1475px; height:560px; margin:0 auto;}
-
-    #slider  img{width:100%; height:100%;}
-
-    section{width:1280px; height:405px; margin:0 auto;}
-
-    #news{width:345px; height:155px; float:left; margin:30px 0 0 30px;}
+    a{text-decoration:none; color:#000;}
+    #product {width:1000px; height:800px; margin:0 auto; background-color:gold;}
+    #product > h3{font-size:20px; color:green; text-align:center; line-height:50px; letter-spacing:10px;}
     
+    #product > p{font-size:17px; text-align:center; line-height:50px; letter-spacing:10px;}
     
+	#product > .box {width:200px; height:300px; background-color:tomato; float:left; margin:20px 25px;}
     
-    #news> table > a { text-decoration:none; color:#000; margin:0;}
-
-    #icon {width:455px; height:155px; float:left; margin:30px 0 0 30px;}
-    #icon > .iconbox {width:70px; height:75px; float:left; margin:30px 10px 0 0px;}
-
-    #icon > .iconbox >img {width:75px; height:75px;}
-
-    #brand {width:330px; height:155px; float:left; margin:30px 0 0 30px;}
-    #brand > p {margin:20px 10px 0 0; font-size:12px; color:#000;}
+    #product >.box > a > img{width:100%; height:200px;}
+    #product > .box > h4 > a{font-size:15px;}
+     #product > .box > span > a{font-size:12px;}
+     
+     #product > .hit {width:200px; height:300px; background-color:tomato; float:left; margin:20px 25px;}
     
-    #news > table {font-size:12px;}
-    #news> table a {height:25px;text-decoration:none; color:#000;}
-
-    #promotion {width:345px; height:150px; float:left; margin:30px 0 0 30px;}
-
-    
-    #promotion > p{color:#000; font-size: 15px; float:left; width:200px; height:70px; margin:20px 0 0 0px;}
-    #promotion > a>img{float:right; width:100px; height:100px;}
-    #camp {width:455px; height:150px; float:left; margin:30px 0 0 30px;}
-    #camp > p {color:#000; font-size: 15px; float:left; width:200px; height:70px; margin:20px 0 0 0px;}
-    #camp > a>img{float:right; width:100px; height:100px;}
-
-    #store {width:330px; height:155px; float:left; margin:30px 0 0 30px;}
-    #store > a>img{float:right; width:100px; height:100px;}
-    #store > p {color:#000; font-size: 15px; float:left; width:200px; height:70px; margin:20px 0 0 0px;}
-    
-    footer {width:100%; height:145px;}
-    
-    footer > #box{width:1240px; height:130px; margin:0 auto;}
-    footer> #box > ul {font-size:20px; width:800px; height:100px; margin:40px 0 0 20px;}
-    
-    #box > ul>li{float:left; margin:5px 10px 0 10px;}
-#box>ul>li>a{text-decoration:none; color:#000;font-size:15px;}
+    #hit{width:1000px; height:800px; margin:0 auto; background-color:skyblue;}
+    #product >.hit > a > img{width:100%; height:200px;}
+    #product > .hit > h4 > a{font-size:15px;}
+     #product > .hit > span > a{font-size:12px;}
 
   </style>
-</head>
-<body>
+  <body>
+  
+	<div id="product">
+    <h3>오늘의 상품</h3>
+    <p>새로운 상품을 만나보세요</p>
 
-  <header>
+	
 
-    <div id="logo"><img src="https://blog.kakaocdn.net/dn/baV5i8/btqw7O8J6ZT/nKACSiWqczAOfdFtBlEqD0/img.jpg" alt="로고"></div>
-    <div id="login">
-      <ul>
-        <li><a href="#">로그인</a></li>
-        <li>ㅣ</li>
-        <li><a href="#">회원가입</a></li>
-        <li>ㅣ</li>
-        <li><a href="#">QnA</a></li>
-        <li>ㅣ</li>
-        <li><a href="#">LANGUAHE</a></li>
-      </ul>
+    <div class="box">
+      <a href="#">
+        <img src="https://thumbnail10.coupangcdn.com/thumbnails/remote/320x320ex/image/vendor_inventory/f4ed/c1103bd2d049b0486f9cc595853d4fc624b4e2f07403bec2c021e6c19cc0.jpg"alt="신발"></a><h4><a href="#">락스톤캐나다 다이얼 쿠션 런닝</a></h4>
+      <span>54,300원<a href="#"></a></span>
     </div>
 
-    <div id="nav">
-
-      <ul>
-        <li><a href="#">Model</a></li>
-        <li><a href="#">Driving</a></li>
-
-        <li><a href="#">performance</a></li>
-
-        <li><a href="#">Service</a></li>
-        <li><a href="#">Event</a></li>
-      </ul>
-
+    <div class="box">
+      <a href="#">
+        <img src="https://thumbnail6.coupangcdn.com/thumbnails/remote/320x320ex/image/vendor_inventory/6992/b6dc3d40bf39278d406da791d3d1349dc9fb53340803dd0d71534d595fbe.jpg"alt="신발"></a><h4><a href="#">제이슈 렌토 밴드 스트링 자수 스니커즈</a></h4>
+      <span>29,810원<a href="#"></a></span>
     </div>
 
-  </header>
+    <div class="box">
+      <a href="#">
+        <img src="https://thumbnail6.coupangcdn.com/thumbnails/remote/320x320ex/image/vendor_inventory/ba2a/89cdec6fd259023885f5a8d0fcdaecafd526d3bdb9422246cf6ee63abcbe.jpg"alt="신발"></a><h4><a href="#">ANYOU 남성 사계절 초경량 런닝화 남자운동화 클래식 스니커즈</a></h4>
+      <span>16,900원<a href="#"></a></span>
+    </div>
 
-  <div id="slider"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJf9TYKa5QKdblwYPnIpo9vsgvPwh2sGTWLg&s" alt="차사진">
-  </div>
-
-  <section>
-    <div id="news">
-    <h3>NEWS</h3>
-    <br>
-    <table>
-    <tr>
-    <td><a href="#">FCA 코리아, '2017' FCA 서비스 스킬...</a></td>
-    <br>
-    </tr>
-    <tr>
-    <td><a href="#">지프, '랭글러 언리미티드 랭글러 JK 에디션...</a></td>
-    <br>
-    </tr>
-    <tr>
-      <td><a href="#">가장 스릴 넘치는 '지프 드라이브 스루'가...</a></td>
+    <div class="box">
+      <a href="#">
+        <img src="https://thumbnail10.coupangcdn.com/thumbnails/remote/320x320ex/image/vendor_inventory/49ec/a0b79001a12f9d3fe79875692d3852a50f5c74d680788c1bfd05004f5508.jpg"alt="신발"></a><h4><a href="#">뉴발란스 530 남여공용 운동화 MR530AD</a></h4>
+      <span>47,990원
       
-      </tr>
-  </table>
+
+<a href="#"></a></span>
+</div>
+	
+    <div class="box">
+      <a href="#">
+        <img src="https://thumbnail8.coupangcdn.com/thumbnails/remote/320x320ex/image/vendor_inventory/f0fc/45b90b19639357fd85b8596237a4262e3f195a61a041195fbf150e110955.jpg"alt="신발"></a><h4><a href="#">비바스텝 발편한 런닝화 남성 운동화 어글리 슈즈</a></h4>
+      <span>19,900원
+<a href="#"></a></span>
+    </div>
+
+    <div class="box">
+      <a href="#">
+        <img src="https://thumbnail6.coupangcdn.com/thumbnails/remote/320x320ex/image/vendor_inventory/8fb2/393a5d82b6795947e4fc2eee8895cb0e10587ee231a2f658a4338417e2af.jpg"alt="신발"></a><h4><a href="#">남성 운동화 2024 남성 신발 패션 캐주얼화 러닝화 방한화</a></h4>
+      <span>19,600원<a href="#"></a></span>
+    </div>
+
+    <div class="box">
+      <a href="#">
+        <img src="https://thumbnail6.coupangcdn.com/thumbnails/remote/320x320ex/image/1025_amir_coupang_oct_80k/011d/e20d837220619eb888d97ce7ddd7d418f7779d171c1273d3b6884aa57a7a.jpg"alt="신발"></a><h4><a href="#">유세븐 남여공용 생활방수 DM프루프 운동화</a></h4>
+      <span>22,900원<a href="#"></a></span>
+    </div>
+
+    <div class="box">
+      <a href="#">
+        <img src="https://thumbnail10.coupangcdn.com/thumbnails/remote/320x320ex/image/vendor_inventory/7ca8/3843f00401a030736b44a39393802c48047434b11c7376b2811c3f13dcda.jpg"alt="신발"></a><h4><a href="#">SMALELCC 사계절 편안한 캐주얼 슈즈 PU 방수 스니커즈 커플 운동화</a></h4>
+      <span>27,600원
+<a href="#"></a></span>
+
+
+
+
+
+<div class="hit">
+	<h3>오늘의 상품</h3>
+    <p>새로운 상품을 만나보세요</p>
     
-    
+    <div class="box">
+      <a href="#">
+        <img src="https://thumbnail8.coupangcdn.com/thumbnails/remote/320x320ex/image/vendor_inventory/5540/580ba9b85766351bf6081385174cad0db177589ce4486bee5020b514d4a1.png"alt="신발"></a><h4><a href="#">슈페르 발편한 런닝화 남성 운동화</a></h4>
+      <span>19,800원<a href="#"></a></span>
     </div>
 
-    <div id="icon">
-      <div class="iconbox"><a href="#"><img src="C:\ydb\0327\img\icon_img1.jpg"></a></div>
-      <div class="iconbox"><a href="#"><img src="C:\ydb\0327\img\icon_img2.jpg"></a></div>
-      <div class="iconbox"><a href="#"><img src="C:\ydb\0327\img\icon_img3.jpg"></a></div>
-      <div class="iconbox"><a href="#"><img src="C:\ydb\0327\img\icon_img4.jpg"></a></div>
-      <div class="iconbox"><a href="#"><img src="C:\ydb\0327\img\icon_img5.jpg"></a></div>
-
+    <div class="box">
+      <a href="#">
+        <img src="https://thumbnail6.coupangcdn.com/thumbnails/remote/320x320ex/image/vendor_inventory/8fb2/393a5d82b6795947e4fc2eee8895cb0e10587ee231a2f658a4338417e2af.jpg"alt="신발"></a><h4><a href="#">SMALELCC 사계절 하이탑 스니커즈 남녀공용 PU 방수 운동화</a></h4>
+      <span>28,700원
+<a href="#"></a></span>
     </div>
 
-
-
-    <div id="brand">
-      <h3>Brand Stroy</h3>
-      <p>모험은 모든 Jeep®가 보유한 DNA의 일부입니다. 인류가 호기심에 이끌려 천지 끝까지 탐험을 멈추지 않는 한 Jeep®는 계속해서 인류가 그 한계를 뛰어 넘도록 영감을 줄 것입니다.</p>
+    <div class="box">
+      <a href="#">
+        <img src="https://thumbnail6.coupangcdn.com/thumbnails/remote/320x320ex/image/1025_amir_coupang_oct_80k/011d/e20d837220619eb888d97ce7ddd7d418f7779d171c1273d3b6884aa57a7a.jpg"alt="신발"></a><h4><a href="#">유세븐 남여공용 생활방수 DM프루프 운동화</a></h4>
+      <span>22,900원<a href="#"></a></span>
     </div>
-    <div id="promotion">
-      <h3>이달의 프로모션</h3>
-      <p>JEEP에서 마련한 최상의 구매 혜택을 소개해드립니다. 내게 딱 맞는 조건대로 부담 없이 선택하세요.</p>
-      <a href="#"><img src="C:\ydb\0327\img\in_img2.jpg"></a>
-    </div>
-    <div id="camp">
-      <h3>JEECAMP</h3>
-      <p>JEEP를 구매해주신 고객분들을 초대하여 서로의 정보를 교환 하고 친목을 다질수 있는 캠프 입니다.</p>
-      <a href="#"><img src="C:\ydb\0327\img\in_img4.jpg"></a>
 
-    </div>
-    <div id="store">
-      <h3>매장및 서비스센터</h3>
-      <p>JEEP의 매장과 서비스센터를 안내해 드립니다..</p>
-      <a href="#"><img src="C:\ydb\0327\img\in_img3.jpg"></a>
+    <div class="box">
+      <a href="#">
+        <img src="https://thumbnail6.coupangcdn.com/thumbnails/remote/320x320ex/image/vendor_inventory/6a2e/cc6178e46d536d8df579ad9bc5c3b5fe3851ba0a73d299c4e7dbd79a83b5.jpg"alt="신발"></a><h4><a href="#">디아핏 데일리 가벼운 남성 운동화 런닝화</a></h4>
+      <span>14,900원
 
+<a href="#"></a></span>
     </div>
-  </section>
-
-  <footer>
-    <div id="box">
-    
-      <ul>
-        <li><a href="#">HOME</a></li>
-        <li>ㅣ</li>
-        <li><a href="#">회원가입</a></li>
-        <li>ㅣ</li>
-        <li><a href="#">BUSINESS PRACTICE 	OFFICE</a></li>
-        <li>ㅣ</li>
-        <li><a href="#">COPYRIGHT</a></li>
-        <li>ㅣ</li>
-        <li><a href="#">CONTACT US</a></li>
-        <li>ㅣ</li>
-        <li><a href="#">SITEMAP</a></li>
-        <li>ㅣ</li>
-        <li><a href="#">개인정보 처리방침</a></li>
-
-        <li><a href="#">Fiat Chrysler Automobiles (FCA)</a></li>
-        <li>ㅣ</li>
-        <li><a href="#">Chrysler</a></li>
-        <li>ㅣ</li>
-        <li><a href="#">
-          FIAT®</a></li>
-    </ul>
-          
-          <p>
-    ⓒ 2016 Fiat Chrysler Automobiles (FCA). All Rights Reserved.
-Chrysler, Jeep 및 FIAT 로고는 Fiat Chrysler Automobiles (FCA)의 등록 상표입니다.
-  </p>
-      
     </div>
-  </footer>
-</body>
+    </div>
+	</div>
+  </body>
 </html>
 
 
